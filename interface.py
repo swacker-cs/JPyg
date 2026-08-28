@@ -6,7 +6,7 @@ import platformdirs
 import os
 import sys
 
-appDataDir = Path(platformdirs.user_data_dir("JPig", "StefanRWacker"))
+appDataDir = Path(platformdirs.user_data_dir("JPyg", "StefanRWacker"))
 appDataDir.mkdir(parents=True, exist_ok=True)
 configInputPath = appDataDir / "inputDirectory.txt"
 configOutputPath = appDataDir / "outputDirectory.txt"
@@ -61,7 +61,7 @@ class MainWindow(QMainWindow):
 
         self.selectedDir = inputDirectory
         self.selectedOutDir = outputDirectory
-        self.setWindowTitle("JPig")
+        self.setWindowTitle("JPyg")
 
         container = QWidget()
         self.setCentralWidget(container)
