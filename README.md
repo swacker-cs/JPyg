@@ -1,5 +1,5 @@
 # JPyg
- JPyg was created to batch convert images to JPG at a variable size in regular intervals. A common usecase would be preparing Images to be displayed for a Website where better Color Accuracy than delivered by webp is required and where images may need to be frequently changed and resized. 
+ JPyg was created to batch convert images to JPG at a variable size. A common usecase would be preparing Images to be displayed for a Website where better Color Accuracy than delivered by webp is required and where images may need to be frequently changed and resized to accomodate for the required resolution.
 
 ### Functionality:
 - Select the Image Folder and where to save the converted images to.
@@ -19,5 +19,6 @@ python main.py
 
 ### Build executable App:
 ```bash
+python -m PyInstaller --noconsole --onedir --icon=app_icon.ico --add-data "app_icon.ico;." --name JPyg main.py
 python -m PyInstaller --noconsole --onedir --icon=app_icon.ico --add-data "app_icon.ico;." --name JPyg main.py
 ```
